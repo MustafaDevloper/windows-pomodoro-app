@@ -1,0 +1,44 @@
+{
+  "name": "pomodoro-timer",
+  "version": "1.0.0",
+  "main": "main.js",
+  "author": "Pomodoro Dev",
+  "description": "Minimalist Pomodoro Timer Uygulaması",
+  "scripts": {
+    "start": "electron .",
+    "dev": "electron .",
+    "build": "electron-builder"
+  },
+  "devDependencies": {
+    "electron": "^30.0.0",
+    "electron-builder": "^24.9.1"
+  },
+  "build": {
+    "appId": "com.pomodorotimer.app",
+    "productName": "Pomodoro Timer",
+    "icon": "study-time-logo.png",
+    "files": [
+      "main.js",
+      "preload.js",
+      "renderer/**/*",
+      "package.json",
+      "study-time-logo.png"
+    ],
+    "win": {
+      "target": [
+        "nsis",
+        "portable"
+      ]
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "shortcutName": "Pomodoro Timer"
+    },
+    "portable": {
+      "artifactName": "${productName}-${version}-portable.exe"
+    }
+  }
+}
