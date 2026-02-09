@@ -21,7 +21,7 @@ Modern Windows 11 tasarım anlayışıyla geliştirilmiş,
 
 ## 📸 Ekran Görüntüleri
 
-> (Buraya ekran görüntüsü ekleyebilirsin)
+
 
 
 <img width="1919" height="1019" alt="image" src="https://github.com/user-attachments/assets/4f492a2f-ae94-4c4e-922d-a01b8c9970d3" />
@@ -45,8 +45,8 @@ Modern Windows 11 tasarım anlayışıyla geliştirilmiş,
 Projeyi yerel ortamda çalıştırmak için:
 
 ```bash
-git clone https://github.com/kullanici-adi/proje-adi.git
-cd proje-adi
+git clone https://github.com/MustafaDevloper/windows-pomodoro-app
+cd windows-pomodoro-app
 npm install
 npm start
 ```
